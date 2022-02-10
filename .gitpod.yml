@@ -7,5 +7,17 @@ tasks:
       bash
 # Ports to expose on workspace startup
 ports:
-  - port: 8000
+  - port: 3333
     onOpen: open-preview
+vscode:
+  extensions:
+    - salesforce.salesforcedx-vscode
+    - redhat.vscode-xml
+    - esbenp.prettier-vscode
+    - dbaeumer.vscode-eslint
+    - 42crunch.vscode-openapi
+    - yzane.markdown-pdf
+    - tomoyukim.vscode-mermaid-editor
+    - bierner.markdown-mermaid
+    - jebbs.plantuml
+    - myml.vscode-markdown-plantuml-preview
