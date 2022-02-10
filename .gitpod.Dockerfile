@@ -2,7 +2,7 @@ FROM gitpod/workspace-full
 
 ENV DEBIAN_FRONTEND=noninteractive
 ARG SALESFORCE_CLI_VERSION=latest
-RUN apt-get update
+RUN apt-get update --assume-yes
 RUN echo '2d316e55994086e41761b0c657e0027e9d16d7160d3f8854cc9dc7615b99a526  ./nodejs.tar.gz' > node-file-lock.sha \
   && curl -s -o nodejs.tar.gz https://nodejs.org/dist/v12.18.2/node-v12.18.2-linux-x64.tar.gz \
   && shasum --check node-file-lock.sha
